@@ -38,8 +38,8 @@
     content:"";
     width: 20px;
 	height: 20px;
+    display: inline-block;
     background-image: url(./img/Frame\ 59.png);
-    padding: 0px;
     
 }
 .partner{
@@ -53,11 +53,18 @@
     letter-spacing: -0.48px;
     text-transform: uppercase;
 }
+.header > p::after{
+    content:"";
+    width: 20px;
+	height: 20px;
+    display: inline-block;
+    background-image: url(./img/Frame\ 59.png);
+}
 main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50% 50%;
-    margin-bottom: 30px;
+
 }
 section{
     margin: 0 auto;
@@ -75,7 +82,7 @@ section{
     padding-top: 100px;
     padding-bottom: 30px;
 }
-.program > div span, .target > div span{
+.program > div span{
     color: #000;
     font-size: 57px;
     font-weight: 700;
@@ -109,4 +116,83 @@ section{
 }
 main div img{
     width: 100%;
+}
+.target > div span{
+    color: #000;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -1.14px;
+    text-transform: uppercase;
+    }
+
+@media screen and (max-width:1100px){
+    .program__text, .target__text{
+        font-size: 10px;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+    .program > div span{
+        font-size: 50px;
+    }
+    .program > div > div, .target > div > div{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+    .program__paragraphe, .target__paragraphe{
+        font-size: 10px;
+        max-width: 237px;
+        padding-bottom: 50px;
+    }
+    .button > button{
+        width: 213px;
+        height: 55px;
+        font-size: 16px;
+    }
+    .target > div span{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:800px){
+    .program__text, .target__text{
+        font-size: 10px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+    .program > div span{
+        font-size: 35px;
+    }
+    .program > div > div, .target > div > div{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .program__paragraphe, .target__paragraphe{
+        font-size: 10px;
+        max-width: 237px;
+        padding-bottom: 20px;
+    }
+    .button > button{
+        width: 150px;
+        height: 35px;
+        font-size: 10px;
+    }
+    .target > div span{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:800px){
+    main{
+        display: block;
+    }
+    main div img{
+        width: 50%;
+    }
+    section{
+        margin: 0 auto;
+    }
+    button{
+        margin-bottom: 10px;
+    }
 }
