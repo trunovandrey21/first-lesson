@@ -50,12 +50,16 @@ header a{
 header a:hover{
     color: #0536FC;
 }
-a::after{
+header a::after{
     content: "";
-    border-left: 1px solid #000;
-    border-bottom: 1px solid #000;
-    transform:rotateZ(45deg);
-    padding-left: 15px;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+    transform: rotate(-45deg);
 }
 .header__paragraphe{
     color: #000;
@@ -68,10 +72,14 @@ a::after{
 }
 .header__paragraphe::after{
     content: "";
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
-    transform: rotate(45deg);
-    padding-left: 10px;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+    transform: rotate(-45deg);
 }
 .header__paragraphe:hover{
     color: #0536FC;
